@@ -126,20 +126,21 @@ ul li span:hover {
 }
 
 .progress-container {
-  width: 100%;
-  background: #eee;
-  border-radius: 20px;
-  margin: 10px 0 20px 0;
-  height: 20px;
-  overflow: hidden;
+    width: 100%;
+    background: #eee;
+    border-radius: 20px;
+    margin: 10px 0 20px 0;
+    height: 20px;
+    overflow: hidden;
 }
 
 .progress-bar {
-  height: 100%;
-  width: 0%; /* Starting width */
-  background: #ff5945;
-  transition: width 0.3s ease;
-  border-radius: 20px;
+    height: 100%;
+    width: 0%;
+    /* Starting width */
+    background: #ff5945;
+    transition: width 0.3s ease;
+    border-radius: 20px;
 }
 
 #progress-message {
@@ -150,3 +151,41 @@ ul li span:hover {
     font-style: italic;
 }
 
+html,
+body {
+    overscroll-behavior: none;
+    overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+    .todo-app {
+        margin: 50px auto 20px;
+        padding: 20px 15px 40px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        max-width: none;
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    #progress-message {
+        font-size: 16px;
+    }
+
+    ul li {
+        font-size: 15px;
+    }
+}
