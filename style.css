@@ -59,12 +59,14 @@ input {
 button {
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 40px;
     background: #ff5945;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
     border-radius: 40px;
+    width: 100%;
+    max-width: 130px;
 }
 
 ul li {
